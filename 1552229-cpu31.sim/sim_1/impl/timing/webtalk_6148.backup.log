@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon May 01 23:25:04 2017
+# Process ID: 6148
+# Current directory: E:/vivado_projects/1552229-cpu31/1552229-cpu31.sim/sim_1/impl/timing
+# Command line: wbtcv.exe -mode batch -source E:/vivado_projects/1552229-cpu31/1552229-cpu31.sim/sim_1/impl/timing/xsim.dir/cpu_test_time_impl/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/vivado_projects/1552229-cpu31/1552229-cpu31.sim/sim_1/impl/timing/webtalk.log
+# Journal file: E:/vivado_projects/1552229-cpu31/1552229-cpu31.sim/sim_1/impl/timing\webtalk.jou
+#-----------------------------------------------------------
+source E:/vivado_projects/1552229-cpu31/1552229-cpu31.sim/sim_1/impl/timing/xsim.dir/cpu_test_time_impl/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon May 01 23:25:05 2017...

@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed May 31 21:28:17 2017
+# Process ID: 8936
+# Current directory: E:/vivado_projects/1552229-cpu31
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13464 E:\vivado_projects\1552229-cpu31\1552229-cpu31.xpr
+# Log file: E:/vivado_projects/1552229-cpu31/vivado.log
+# Journal file: E:/vivado_projects/1552229-cpu31\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/vivado_projects/1552229-cpu31/1552229-cpu31.xpr
+update_compile_order -fileset sources_1
+close [ open E:/vivado_projects/1552229-cpu31/1552229-cpu31.srcs/sources_1/new/multu.v w ]
+add_files E:/vivado_projects/1552229-cpu31/1552229-cpu31.srcs/sources_1/new/multu.v
+update_compile_order -fileset sources_1
+close [ open E:/vivado_projects/1552229-cpu31/1552229-cpu31.srcs/sources_1/new/mult.v w ]
+add_files E:/vivado_projects/1552229-cpu31/1552229-cpu31.srcs/sources_1/new/mult.v
+update_compile_order -fileset sources_1
+remove_files E:/vivado_projects/1552229-cpu31/1552229-cpu31.srcs/sources_1/new/mult.v
+file delete -force E:/vivado_projects/1552229-cpu31/1552229-cpu31.srcs/sources_1/new/mult.v
+close [ open E:/vivado_projects/1552229-cpu31/1552229-cpu31.srcs/sources_1/new/mul.v w ]
+add_files E:/vivado_projects/1552229-cpu31/1552229-cpu31.srcs/sources_1/new/mul.v
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.divide_by_zero_detect {true} CONFIG.latency_configuration {Manual} CONFIG.latency {0}] [get_ips div]
+generate_target all [get_files  E:/vivado_projects/1552229-cpu31/1552229-cpu31.srcs/sources_1/ip/div/div.xci]
+export_ip_user_files -of_objects [get_files E:/vivado_projects/1552229-cpu31/1552229-cpu31.srcs/sources_1/ip/div/div.xci] -no_script -force -quiet
+reset_run div_synth_1
+launch_run -jobs 2 div_synth_1
+export_simulation -of_objects [get_files E:/vivado_projects/1552229-cpu31/1552229-cpu31.srcs/sources_1/ip/div/div.xci] -directory E:/vivado_projects/1552229-cpu31/1552229-cpu31.ip_user_files/sim_scripts -ip_user_files_dir E:/vivado_projects/1552229-cpu31/1552229-cpu31.ip_user_files -ipstatic_source_dir E:/vivado_projects/1552229-cpu31/1552229-cpu31.ip_user_files/ipstatic -force -quiet
+create_ip -name div_gen -vendor xilinx.com -library ip -version 5.1 -module_name divu
+set_property -dict [list CONFIG.dividend_and_quotient_width {32} CONFIG.divisor_width {32} CONFIG.operand_sign {Unsigned} CONFIG.latency_configuration {Manual} CONFIG.latency {0} CONFIG.fractional_width {32}] [get_ips divu]
+generate_target {instantiation_template} [get_files e:/vivado_projects/1552229-cpu31/1552229-cpu31.srcs/sources_1/ip/divu/divu.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  e:/vivado_projects/1552229-cpu31/1552229-cpu31.srcs/sources_1/ip/divu/divu.xci]
+export_ip_user_files -of_objects [get_files e:/vivado_projects/1552229-cpu31/1552229-cpu31.srcs/sources_1/ip/divu/divu.xci] -no_script -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/vivado_projects/1552229-cpu31/1552229-cpu31.srcs/sources_1/ip/divu/divu.xci]
+launch_run -jobs 2 divu_synth_1
+export_simulation -of_objects [get_files e:/vivado_projects/1552229-cpu31/1552229-cpu31.srcs/sources_1/ip/divu/divu.xci] -directory E:/vivado_projects/1552229-cpu31/1552229-cpu31.ip_user_files/sim_scripts -ip_user_files_dir E:/vivado_projects/1552229-cpu31/1552229-cpu31.ip_user_files -ipstatic_source_dir E:/vivado_projects/1552229-cpu31/1552229-cpu31.ip_user_files/ipstatic -force -quiet
+close [ open E:/vivado_projects/1552229-cpu31/1552229-cpu31.srcs/sources_1/new/load.v w ]
+add_files E:/vivado_projects/1552229-cpu31/1552229-cpu31.srcs/sources_1/new/load.v
+update_compile_order -fileset sources_1
+close [ open E:/vivado_projects/1552229-cpu31/1552229-cpu31.srcs/sources_1/new/save.v w ]
+add_files E:/vivado_projects/1552229-cpu31/1552229-cpu31.srcs/sources_1/new/save.v
+update_compile_order -fileset sources_1
+close [ open E:/vivado_projects/1552229-cpu31/1552229-cpu31.srcs/sources_1/new/cz.v w ]
+add_files E:/vivado_projects/1552229-cpu31/1552229-cpu31.srcs/sources_1/new/cz.v
+update_compile_order -fileset sources_1

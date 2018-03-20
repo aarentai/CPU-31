@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file E:\vivado_projects\1552229-cpu31\1552229-cpu31.runs\ipcore_synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: 没有权限

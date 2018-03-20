@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sat Jun 03 20:14:38 2017
+# Process ID: 4472
+# Current directory: E:/vivado_projects/1552229-cpu31
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4916 E:\vivado_projects\1552229-cpu31\1552229-cpu31.xpr
+# Log file: E:/vivado_projects/1552229-cpu31/vivado.log
+# Journal file: E:/vivado_projects/1552229-cpu31\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/vivado_projects/1552229-cpu31/1552229-cpu31.xpr
+update_compile_order -fileset sources_1
+reset_run ipcore_synth_1
+launch_runs ipcore_synth_1
+wait_on_run ipcore_synth_1
+synth_design -rtl -name rtl_1
